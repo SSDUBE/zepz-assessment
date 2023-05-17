@@ -13,7 +13,7 @@ export const syncActivities = async (_parent: any, _args: any) => {
     const activitiesPromises: Promise<AxiosResponse<any, any>>[] = [];
     const activityUpdatePromises: Promise<any>[] = [];
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
       activitiesPromises.push(axios.get('https://boredapi.com/api/activity'));
     }
 
