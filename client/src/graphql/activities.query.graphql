@@ -1,0 +1,11 @@
+query activities($type: String) {
+  activities(type: $type) {
+    activity
+    type
+    participants
+    price
+    link
+    key
+    accessibility
+  }
+}
